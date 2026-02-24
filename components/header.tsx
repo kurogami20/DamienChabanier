@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { AppSidebar } from "./appSidebar";
 import { SidebarProvider, SidebarTrigger } from "./ui/sidebar";
+import type { PrimitiveAtom } from "jotai";
 // import ThemeSwitch from "./themeSwitch";
 
 interface HeaderProps {
@@ -9,6 +10,7 @@ interface HeaderProps {
 }
 
 const Header = ({ isHome }: HeaderProps) => {
+  console.log(`home, ${isHome}`);
   return (
     <header className={` flex fixed w-full ${isHome ? "py-8 px-8" : "py-2"}`}>
       <SidebarProvider className="min-h-fit max-w-fit flex items-center ">
