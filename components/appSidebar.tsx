@@ -22,7 +22,7 @@ export function AppSidebar() {
   ];
 
   return (
-    <Sidebar className="border-r-(--sidebar-right)">
+    <Sidebar className="border-r-[#880036]">
       <SidebarHeader className="flex flex-col " />
 
       <SidebarContent className="mx-2">

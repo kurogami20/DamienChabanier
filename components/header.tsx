@@ -4,11 +4,17 @@ import { AppSidebar } from "./appSidebar";
 import { SidebarProvider, SidebarTrigger } from "./ui/sidebar";
 // import ThemeSwitch from "./themeSwitch";
 
-const Header = () => {
+interface HeaderProps {
+  isHome: boolean;
+}
+
+const Header = ({ isHome }: HeaderProps) => {
   return (
-    <header className=" py-2 flex fixed w-full relative">
+    <header className={` flex fixed w-full ${isHome ? "py-8 px-8" : "py-2"}`}>
       <SidebarProvider className="min-h-fit max-w-fit flex items-center ">
-        <SidebarTrigger className="cursor-pointer [&_svg:not([class*='size-'])]:size-6 self-end mb-5 " />
+        <SidebarTrigger
+          className={`cursor-pointer [&_svg:not([class*='size-'])]:size-6 self-end mb-5 ${isHome ? "color_main hover:bg-transparent" : ""}`}
+        />
         <AppSidebar />
       </SidebarProvider>
       <Link href="/" className=" text-3xl font-medium ">
@@ -17,7 +23,7 @@ const Header = () => {
           alt="Logo"
           width={200}
           height={200}
-          className=""
+          className={`${isHome ? "hidden" : ""}`}
         />
       </Link>
     </header>
