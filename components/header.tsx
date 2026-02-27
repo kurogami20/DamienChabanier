@@ -15,7 +15,8 @@ const Header = () => {
     <header
       className={` flex  top-0 w-full py-5 ${isHome ? " fixed px-8 " : "sticky bg-background px-5"}     items-center justify-between z-50 `}
     >
-      <Link href="/" className=" text-3xl font-medium flex w-full  ">
+      <div className="absolute bg-[#fff5de] opacity-20 w-full h-full top-0 left-0 z-[-1]  " />
+      <Link href="#accueil" className=" text-3xl font-medium flex w-full  ">
         <Image
           src="/logoFolio.svg"
           alt="Logo"
@@ -27,22 +28,22 @@ const Header = () => {
       <nav className="w-full">
         <ul className="flex justify-end gap-8 text-lg font-medium">
           <li>
-            <Link className="hover:underline " href="/projets">
+            <Link className="hover:underline " href="#projets">
               Projets
             </Link>
           </li>
           <li>
-            <Link className="hover:underline " href="/competences">
+            <Link className="hover:underline " href="#competences">
               Compétences
             </Link>
           </li>
           <li>
-            <Link className="hover:underline " href="/a-propos">
+            <Link className="hover:underline " href="#a-propos">
               À propos
             </Link>
           </li>
           <li>
-            <Link className="hover:underline " href="/contact">
+            <Link className="hover:underline " href="#contact">
               Contact
             </Link>
           </li>

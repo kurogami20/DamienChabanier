@@ -130,3 +130,7 @@
 .color_main {
   color: var(--background) !important;
 }
+
+div[data-slot="carousel-content"] {
+  height: 100%;
+}
