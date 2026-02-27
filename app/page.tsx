@@ -52,12 +52,21 @@ export default function Home() {
     },
   ];
 
+  function lineAnimate() {
+    const lines = document.querySelectorAll("line");
+
+    lines.forEach((line, index) => {
+      line.classList.add("hover:animate-pulse", "cursor-pointer");
+    });
+  }
+
   function randomOffer() {
     const randomIndex = Math.floor(Math.random() * offers.length);
     setOffer(offers[randomIndex]);
   }
 
   useEffect(() => {
+    lineAnimate();
     const interval = setInterval(() => {
       randomOffer();
     }, 3000);
@@ -66,7 +75,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex justify-between ">
+    <main className="flex justify-between  ">
       {/* <Image
         src="/hero_image.svg"
         alt="Hero Image"
@@ -75,56 +84,50 @@ export default function Home() {
         className="h-dvh object-cover max-w-1/2 w-full object-top"
       /> */}
       <svg
-        width="900"
+        width="847"
         height="1080"
-        viewBox="0 0 892 1080"
+        viewBox="0 0 847 1080"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className="h-screen"
       >
-        <title>Decorative gradient lines background</title>
-        <line
-          y1="-51"
-          x2="2059.02"
-          y2="-51"
-          transform="matrix(-4.37114e-08 -1 0.999986 0.00532905 319 1738)"
-          stroke="#E60000"
-          stroke-width="102"
-          className="hover:animate-pulse  hover:stroke-120 transition-all duration-300 cursor-[url('/hero_image.svg'),pointer] relative"
-        >
-          <title>Link to project </title>
-        </line>
-        <line
-          y1="-51"
-          x2="2059.02"
-          y2="-51"
-          transform="matrix(-4.37114e-08 -1 0.999986 0.00532905 207 1716)"
-          stroke="#B10000"
-          stroke-width="102"
-          className="hover:animate-pulse cursor-pointer hover:stroke-120 transition-all duration-300"
-        />
-        <line
-          y1="-51"
-          x2="2059.02"
-          y2="-51"
-          transform="matrix(-4.37114e-08 -1 0.999986 0.00532905 431 1723)"
-          stroke="#FF7700"
-          stroke-width="102"
-          className="hover:animate-pulse cursor-pointer hover:stroke-120 transition-all duration-300"
-        />
-        <line
-          y1="-51"
-          x2="2059.02"
-          y2="-51"
-          transform="matrix(-4.37114e-08 -1 0.999986 0.00532905 542 1709.02)"
-          stroke="#FFCC00"
-          stroke-width="102"
-          className="hover:animate-pulse cursor-pointer hover:stroke-120 transition-all duration-300"
-        />
+        <title>Hero Image</title>
         <path
-          d="M589.247 1722.12C1221.71 919.2 445.122 85.8242 589.247 -336.903"
+          d="M543.572 1722.12C1176.03 919.2 399.447 85.8242 543.572 -336.903"
           stroke="#FFDF5D"
           stroke-width="102"
-          className="hover:animate-pulse cursor-pointer hover:stroke-120 transition-all duration-300"
+        />
+        <line
+          y1="-51"
+          x2="2059.02"
+          y2="-51"
+          transform="matrix(-4.37114e-08 -1 0.999986 0.00532905 503.325 1709.02)"
+          stroke="#FFCC00"
+          stroke-width="102"
+        />
+        <line
+          y1="-51"
+          x2="2059.02"
+          y2="-51"
+          transform="matrix(-4.37114e-08 -1 0.999986 0.00532905 401.325 1723)"
+          stroke="#FF7700"
+          stroke-width="102"
+        />
+        <line
+          y1="-51"
+          x2="2059.02"
+          y2="-51"
+          transform="matrix(-4.37114e-08 -1 0.999986 0.00532905 299.325 1738)"
+          stroke="#E60000"
+          stroke-width="102"
+        />
+        <line
+          y1="-51"
+          x2="2059.02"
+          y2="-51"
+          transform="matrix(-4.37114e-08 -1 0.999986 0.00532905 197.325 1716)"
+          stroke="#B10000"
+          stroke-width="102"
         />
         <line
           y1="-51"
@@ -133,10 +136,10 @@ export default function Home() {
           transform="matrix(-4.37114e-08 -1 0.999986 0.00532905 95.3248 1745)"
           stroke="#880036"
           stroke-width="102"
-          className="hover:animate-pulse cursor-pointer hover:stroke-120 transition-all duration-300  "
         />
       </svg>
-      <article className="w-1/2 flex flex-col items-center h-full justify-center gap-40 mt-[10vh]">
+
+      <article className="w-1/2 flex flex-col items-center h-full justify-center gap-40 mt-[10%]">
         <Image src="/logoFolio.svg" alt="Logo" width={560} height={267} />
 
         <h1 className="text-5xl font-light ">

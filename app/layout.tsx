@@ -18,7 +18,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Damien Chabanier Portfolio",
   description:
-    "Damien Chabanier is a software engineer specializing in web development, with a passion for creating innovative and user-friendly applications. With expertise in JavaScript, React, and Node.js, Damien has a proven track record of delivering high-quality projects that meet client needs and exceed expectations.",
+    "Damien Chabanier, développeur web passionné, crée des expériences numériques uniques. Découvrez mes projets innovants et ma vision créative pour le futur du web.",
+  icons: "favicon.svg",
 };
 
 export default function RootLayout({
