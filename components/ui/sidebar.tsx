@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
-import { PanelLeftIcon } from "lucide-react";
+import { PanelLeftClose, PanelLeftIcon, PanelLeftOpen } from "lucide-react";
 import { Slot } from "radix-ui";
 
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -24,6 +24,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { useState } from "react";
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state";
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7;
@@ -259,7 +260,7 @@ function SidebarTrigger({
   ...props
 }: React.ComponentProps<typeof Button>) {
   const { toggleSidebar } = useSidebar();
-
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <Button
       data-sidebar="trigger"
@@ -269,11 +270,14 @@ function SidebarTrigger({
       className={cn("size-7", className)}
       onClick={(event) => {
         onClick?.(event);
+        setIsOpen(!isOpen);
         toggleSidebar();
       }}
       {...props}
     >
-      <PanelLeftIcon />
+      {/* <PanelLeftIcon /> */}
+      {isOpen ? <PanelLeftOpen /> : <PanelLeftClose />}
+
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   );

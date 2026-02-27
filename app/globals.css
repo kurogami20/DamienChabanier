@@ -130,3 +130,7 @@
 .color_main {
   color: var(--background) !important;
 }
+
+body {
+  cursor: url("favicon.ico"), auto;
+}

@@ -5,7 +5,7 @@ import { faSquareLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useSetAtom } from "jotai";
-import { HomeAtom } from "@/utils/atoms";
+import { HomeAtom } from "@/store/atoms";
 
 export default function Home() {
   const setHomeAtom = useSetAtom(HomeAtom);
@@ -66,7 +66,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex justify-between ">
+    <main className="flex justify-between ">
       {/* <Image
         src="/hero_image.svg"
         alt="Hero Image"
@@ -89,8 +89,10 @@ export default function Home() {
           transform="matrix(-4.37114e-08 -1 0.999986 0.00532905 319 1738)"
           stroke="#E60000"
           stroke-width="102"
-          className="hover:animate-pulse  hover:stroke-120 transition-all duration-300 cursor-[url('/hero_image.svg'),pointer] "
-        />
+          className="hover:animate-pulse  hover:stroke-120 transition-all duration-300 cursor-[url('/hero_image.svg'),pointer] relative"
+        >
+          <title>Link to project </title>
+        </line>
         <line
           y1="-51"
           x2="2059.02"
@@ -160,6 +162,6 @@ export default function Home() {
           />
         </div>
       </article>
-    </div>
+    </main>
   );
 }
