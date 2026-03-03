@@ -31,7 +31,7 @@ const BuildNotice = () => {
             <li>
               {" "}
               <Link
-                className="underline text-[#880036] hover:text-[#880036]/80"
+                className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
                 href="http://dam31270.free.fr/index.php"
               >
                 Refonte du site de l'Association AILE
@@ -43,7 +43,7 @@ const BuildNotice = () => {
                 <li>
                   {" "}
                   <Link
-                    className="underline text-[#880036] hover:text-[#880036]/80"
+                    className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
                     href="https://greenroots2025.surge.sh"
                   >
                     Site GreenRoots
@@ -51,7 +51,7 @@ const BuildNotice = () => {
                 </li>
                 <li>
                   <Link
-                    className="underline text-[#880036] hover:text-[#880036]/80"
+                    className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
                     href="https://www.figma.com/design/g2EoR8EwZglLKxc09Q0Gy2/GreenRoots?node-id=0-1&t=NrwWJ2I0ZD6KBV59-1"
                   >
                     Maquette de GreenRoots
@@ -65,7 +65,7 @@ const BuildNotice = () => {
                 <li>
                   {" "}
                   <Link
-                    className="underline text-[#880036] hover:text-[#880036]/80"
+                    className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
                     href="https://maisondelanature65.com"
                   >
                     Site de la Maison de la Nature et de l'Environnement 65
@@ -73,7 +73,7 @@ const BuildNotice = () => {
                 </li>
                 <li>
                   <Link
-                    className="underline text-[#880036] hover:text-[#880036]/80"
+                    className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
                     href="https://www.figma.com/design/zpPQK7W1Dqc5zrS8GBh8QG/mne65?node-id=19-399&t=eKGCuLE3URAb7wfa-1"
                   >
                     Maquette de la Maison de la Nature et de l'Environnement 65
@@ -85,7 +85,7 @@ const BuildNotice = () => {
           <p className="mt-4">
             Plus de projets à retrouver sur mon{" "}
             <Link
-              className="underline text-[#880036] hover:text-[#880036]/80"
+              className="underline text-[#880036] hover:text-[#880036]/80 font-bold "
               href="https://github.com/kurogami20"
             >
               compte
@@ -93,9 +93,9 @@ const BuildNotice = () => {
             GitHub
           </p>
         </CardContent>
-        <CardFooter className="flex flex-col w-full  gap-4">
-          <p>Retrouvez moi sur:</p>
-          <div>
+        <CardFooter className="flex flex-col  gap-4 items-stretch">
+          <p className="text-center">Retrouvez moi sur:</p>
+          <div className="flex justify-center gap-1">
             <FontAwesomeIcon
               icon={faGithub}
               style={{ color: "#880036" }}
@@ -114,6 +114,20 @@ const BuildNotice = () => {
                 )
               }
             />
+          </div>
+          <div className="flex  justify-between mt-5">
+            <Link
+              className="underline text-[#880036] hover:text-[#880036]/80 font-bold "
+              href={"mailto:damienchabanier@gmail.com"}
+            >
+              damienchabanier@gmail.com
+            </Link>
+            <Link
+              className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
+              href={"tel:+33783341917"}
+            >
+              +33 7 83 34 19 17
+            </Link>
           </div>
         </CardFooter>
       </Card>
