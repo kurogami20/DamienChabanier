@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { useSetAtom } from "jotai";
 import { HomeAtom } from "@/store/atoms";
 import Projects from "./projets/page";
-import Competences from "./competences/page";
+import Competences from "./expertises/page";
 
 export default function Home() {
   const setHomeAtom = useSetAtom(HomeAtom);
@@ -114,15 +114,7 @@ export default function Home() {
           </div>
         </article>
       </section>
-      <section className="h-screen ">
-        <Projects />
-      </section>
-      <section className="h-screen bg-[#b10000]">
-        <Competences />
-      </section>
-
-      <section className="h-screen bg-[#b10000]"></section>
-      <section className="h-screen bg-[#e60000]"></section>
+      <section className="h-screen "></section>
     </main>
   );
 }

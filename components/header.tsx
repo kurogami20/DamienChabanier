@@ -26,25 +26,37 @@ const Header = () => {
         />
       </Link>
       <nav className="w-full">
-        <ul className="flex justify-end gap-8 text-lg font-medium">
+        <ul className="flex justify-end gap-8 text-lg sm:text-xl font-medium">
           <li>
-            <Link className="hover:underline " href="#projets">
+            <Link
+              className="hover:underline text-lg sm:text-xl  "
+              href="#projets"
+            >
               Projets
             </Link>
           </li>
           <li>
-            <Link className="hover:underline " href="#competences">
-              Compétences
+            <Link
+              className="hover:underline text-lg sm:text-xl "
+              href="#expertises"
+            >
+              Expertises
             </Link>
           </li>
           <li>
-            <Link className="hover:underline " href="#a-propos">
+            <Link
+              className="hover:underline text-lg sm:text-xl "
+              href="#a-propos"
+            >
               À propos
             </Link>
           </li>
           <li>
-            <Link className="hover:underline " href="#contact">
-              Contact
+            <Link
+              className="hover:underline text-lg sm:text-xl hover:bg-black hover:text-white transition-all duration-500  border-2 border-black p-4 rounded-full"
+              href="#contact"
+            >
+              Me contacter
             </Link>
           </li>
         </ul>
