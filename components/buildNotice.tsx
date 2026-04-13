@@ -14,135 +14,132 @@ import { Eye } from "lucide-react";
 
 const BuildNotice = () => {
   return (
-    <>
-      <Card className="mx-auto w-full  max-w-2xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-2 bg-background ">
-        <CardHeader className="flex flex-col items-center">
-          <Image src="/logoFolio.svg" alt="Logo" width={150} height={100} />
-          <CardTitle className="text-2xl text-center">
-            Site en construction
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="w-full ">
-          <p>Le site est en cours de construction.</p>
-          <p className="mb-2 mt-4">
-            En attente de mise à jour, vous pouvez consulter mes derniers
-            projets:
-          </p>
-          <ol className="list-decimal list-outside pl-4 flex flex-col gap-4">
-            <li>
-              {" "}
-              <Link
-                className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
-                href="http://dam31270.free.fr/index.php"
-              >
-                Refonte du site de l'Association AILE
-              </Link>
-            </li>
-            <li>
-              Projet GreenRoots
-              <ul className="list-inside list-disc ">
-                <li>
-                  {" "}
-                  <Link
-                    className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
-                    href="https://greenroots2025.surge.sh"
-                  >
-                    Site GreenRoots
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
-                    href="https://www.figma.com/design/g2EoR8EwZglLKxc09Q0Gy2/GreenRoots?node-id=0-1&t=NrwWJ2I0ZD6KBV59-1"
-                  >
-                    Maquette de GreenRoots
-                  </Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              Refonte du site de la Maison de la Nature et de l'Environnement 65
-              <ul className="list-inside list-disc ">
-                <li>
-                  {" "}
-                  <Link
-                    className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
-                    href="https://maisondelanature65.com"
-                  >
-                    Site de la Maison de la Nature et de l'Environnement 65
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
-                    href="https://www.figma.com/design/zpPQK7W1Dqc5zrS8GBh8QG/mne65?node-id=19-399&t=eKGCuLE3URAb7wfa-1"
-                  >
-                    Maquette de la Maison de la Nature et de l'Environnement 65
-                  </Link>
-                </li>
-              </ul>
-            </li>
-          </ol>
-          <p className="mt-4">
-            Plus de projets à retrouver sur mon{" "}
-            <Link
-              className="underline text-[#880036] hover:text-[#880036]/80 font-bold "
-              href="https://github.com/kurogami20"
-            >
-              compte
-            </Link>{" "}
-            GitHub
-          </p>
-          <p className="mb-2 mt-4">
-            Vous pouvez également consulter mon CV :{" "}
-            <Button
-              variant="perso1"
-              className="mx-auto cursor-pointer"
-              onClick={() => window.open("/cv_damien_chabanier.pdf")}
-            >
-              <Eye /> Mon CV
-            </Button>
-          </p>
-        </CardContent>
-        <CardFooter className="flex flex-col  gap-4 items-stretch">
-          <p className="text-center">Retrouvez moi sur:</p>
-          <div className="flex justify-center gap-1">
-            <FontAwesomeIcon
-              icon={faGithub}
-              style={{ color: "#880036" }}
-              className="text-4xl cursor-pointer "
-              type="link"
-              onClick={() => window.open("https://github.com/kurogami20")}
-            />
-            <FontAwesomeIcon
-              icon={faSquareLinkedin}
-              style={{ color: "#880036" }}
-              className="text-4xl ml-4 cursor-pointer"
-              type="link"
-              onClick={() =>
-                window.open(
-                  "https://www.linkedin.com/in/damien-chabanier-822190244/",
-                )
-              }
-            />
-          </div>
-          <div className="flex  justify-between mt-5">
-            <Link
-              className="underline text-[#880036] hover:text-[#880036]/80 font-bold "
-              href={"mailto:damienchabanier@gmail.com"}
-            >
-              damienchabanier@gmail.com
-            </Link>
+    <Card className="mx-auto w-full  max-w-2xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-2 bg-background max-sm:h-dvh text-sm sm:text-normal">
+      <CardHeader className="flex flex-col items-center">
+        <Image src="/logoFolio.svg" alt="Logo" width={150} height={100} />
+        <CardTitle className="text-2xl text-center">
+          Site en construction
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="w-full ">
+        <p>Le site est en cours de construction.</p>
+        <p className="mb-2 mt-4">
+          En attente de mise à jour, vous pouvez consulter mes derniers projets:
+        </p>
+        <ol className="list-decimal list-outside pl-4 flex flex-col gap-4">
+          <li>
+            {" "}
             <Link
               className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
-              href={"tel:+33783341917"}
+              href="http://dam31270.free.fr/index.php"
             >
-              +33 7 83 34 19 17
+              Refonte du site de l'Association AILE
             </Link>
-          </div>
-        </CardFooter>
-      </Card>
-    </>
+          </li>
+          <li>
+            Projet GreenRoots
+            <ul className="list-inside list-disc ">
+              <li>
+                {" "}
+                <Link
+                  className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
+                  href="https://greenroots2025.surge.sh"
+                >
+                  Site GreenRoots
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
+                  href="https://www.figma.com/design/g2EoR8EwZglLKxc09Q0Gy2/GreenRoots?node-id=0-1&t=NrwWJ2I0ZD6KBV59-1"
+                >
+                  Maquette de GreenRoots
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Refonte du site de la Maison de la Nature et de l'Environnement 65
+            <ul className="list-inside list-disc ">
+              <li>
+                {" "}
+                <Link
+                  className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
+                  href="https://maisondelanature65.com"
+                >
+                  Site de la Maison de la Nature et de l'Environnement 65
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
+                  href="https://www.figma.com/design/zpPQK7W1Dqc5zrS8GBh8QG/mne65?node-id=19-399&t=eKGCuLE3URAb7wfa-1"
+                >
+                  Maquette de la Maison de la Nature et de l'Environnement 65
+                </Link>
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <p className="mt-4">
+          Plus de projets à retrouver sur mon{" "}
+          <Link
+            className="underline text-[#880036] hover:text-[#880036]/80 font-bold "
+            href="https://github.com/kurogami20"
+          >
+            compte
+          </Link>{" "}
+          GitHub
+        </p>
+        <div className="flex flex-col items-center sm:flex-row gap-4">
+          <p className="mb-2 mt-4">Vous pouvez également consulter mon CV : </p>
+          <Button
+            variant="perso1"
+            className=" cursor-pointer"
+            onClick={() => window.open("/cv_damien_chabanier.pdf")}
+          >
+            <Eye /> Mon CV
+          </Button>
+        </div>
+      </CardContent>
+      <CardFooter className="flex flex-col  gap-4 items-stretch">
+        <p className="text-center">Retrouvez moi sur:</p>
+        <div className="flex justify-center gap-1">
+          <FontAwesomeIcon
+            icon={faGithub}
+            style={{ color: "#880036" }}
+            className="text-4xl cursor-pointer "
+            type="link"
+            onClick={() => window.open("https://github.com/kurogami20")}
+          />
+          <FontAwesomeIcon
+            icon={faSquareLinkedin}
+            style={{ color: "#880036" }}
+            className="text-4xl ml-4 cursor-pointer"
+            type="link"
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/damien-chabanier-822190244/",
+              )
+            }
+          />
+        </div>
+        <div className="flex items-center justify-between mt-5">
+          <Link
+            className="underline text-[#880036] hover:text-[#880036]/80 font-bold "
+            href={"mailto:damienchabanier@gmail.com"}
+          >
+            damienchabanier@gmail.com
+          </Link>
+          <Link
+            className="underline text-[#880036] hover:text-[#880036]/80 font-bold"
+            href={"tel:+33783341917"}
+          >
+            +33 7 83 34 19 17
+          </Link>
+        </div>
+      </CardFooter>
+    </Card>
   );
 };
 export default BuildNotice;
