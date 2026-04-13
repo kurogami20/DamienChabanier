@@ -3,13 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "./ui/card";
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from "./ui/button";
+import { Eye } from "lucide-react";
 
 const BuildNotice = () => {
   return (
@@ -23,7 +24,7 @@ const BuildNotice = () => {
         </CardHeader>
         <CardContent className="w-full ">
           <p>Le site est en cours de construction.</p>
-          <p className="mb-4">
+          <p className="mb-2 mt-4">
             En attente de mise à jour, vous pouvez consulter mes derniers
             projets:
           </p>
@@ -91,6 +92,16 @@ const BuildNotice = () => {
               compte
             </Link>{" "}
             GitHub
+          </p>
+          <p className="mb-2 mt-4">
+            Vous pouvez également consulter mon CV :{" "}
+            <Button
+              variant="perso1"
+              className="mx-auto cursor-pointer"
+              onClick={() => window.open("/cv_damien_chabanier.pdf")}
+            >
+              <Eye /> Mon CV
+            </Button>
           </p>
         </CardContent>
         <CardFooter className="flex flex-col  gap-4 items-stretch">
