@@ -8,6 +8,7 @@ import { useSetAtom } from "jotai";
 import { HomeAtom } from "@/store/atoms";
 import Projects from "./projets/page";
 import Competences from "./expertises/page";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const setHomeAtom = useSetAtom(HomeAtom);
@@ -67,52 +68,22 @@ export default function Home() {
     setOffer(offers[randomIndex]);
   }
 
-  useEffect(() => {
-    lineAnimate();
-    const interval = setInterval(() => {
-      randomOffer();
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <main className="  flex flex-col w-full h-full">
-      <section id="accueil" className="flex justify-between h-dvh">
+      <section id="accueil" className="h-dvh w-full relative">
+        <article className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-8">
+          <Image src="/logoFolio.svg" alt="Logo" width={200} height={200} />
+          <Button variant="main" className="text-xl px-5 py-6">
+            Découvrez mon CV
+          </Button>
+        </article>
         <Image
-          src="/hero_image.svg"
+          src="/hero_image_mobile.svg"
           alt="Hero Image"
           width={200}
           height={60}
-          className="h-dvh object-cover max-w-1/2 w-full object-top"
+          className="h-dvh object-cover max-w-3/4 w-full "
         />
-
-        <article className="w-1/2 flex flex-col items-center h-full justify-center gap-40 ">
-          <Image src="/logoFolio.svg" alt="Logo" width={500} height={267} />
-
-          <h1 className="text-5xl font-light ">
-            Je développe{" "}
-            <span
-              className={`${offer.background} ${offer.text} px-2 py-2 rounded-lg animateText transition-all duration-500`}
-            >
-              {offer.name}
-            </span>
-          </h1>
-          <div className="absolute bottom-5 right-10">
-            <FontAwesomeIcon
-              icon={faGithub}
-              style={{ color: "rgb(0, 0, 0)" }}
-              className="text-4xl cursor-pointer "
-              type="button"
-            />
-            <FontAwesomeIcon
-              icon={faSquareLinkedin}
-              style={{ color: "rgb(0, 0, 0)" }}
-              className="text-4xl ml-4 cursor-pointer"
-              type="button"
-            />
-          </div>
-        </article>
       </section>
       <section className="h-screen "></section>
     </main>

@@ -6,26 +6,61 @@ import { SidebarProvider, SidebarTrigger } from "./ui/sidebar";
 import { HomeAtom } from "@/store/atoms";
 
 import { useAtomValue, useSetAtom } from "jotai";
+import { use, useEffect, useState } from "react";
+import { Button } from "./ui/button";
 // import ThemeSwitch from "./themeSwitch";
 
 const Header = () => {
   const isHome = useAtomValue(HomeAtom);
+  const [hasScrolled, setHasScrolled] = useState(false);
   console.log(`home, ${isHome}`);
+  const lastScrollY = window.scrollY;
+  function detectScroll() {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > lastScrollY) {
+        setHasScrolled(true);
+      } else {
+        setHasScrolled(false);
+      }
+    });
+  }
+
+  function activateWiggle() {
+    const button = document.querySelector("#contact-button");
+
+    if (button) {
+      button.classList.add("animate-wiggle");
+      setTimeout(() => {
+        button.classList.remove("animate-wiggle");
+      }, 1000); // Durée de l'animation en millisecondes
+    }
+  }
+
+  useEffect(() => {
+    detectScroll();
+  }, []);
+
+  useEffect(() => {
+    activateWiggle();
+  }, [activateWiggle()]);
+
   return (
     <header
-      className={` flex  top-0 w-full py-5 ${isHome ? " fixed px-8 " : "sticky bg-background px-5"}     items-center justify-between z-50 `}
+      className={`w-full fixed top-0 z-50 flex items-center justify-between px-8 py-4 ${hasScrolled ? "transition-all duration-300 bg-background" : "transition-all duration-300 bg-transparent"} transition-all duration-300`}
     >
-      <div className="absolute bg-[#fff5de] opacity-20 w-full h-full top-0 left-0 z-[-1]  " />
-      <Link href="#accueil" className=" text-3xl font-medium flex w-full  ">
+      <Link
+        href="#accueil"
+        className={` text-3xl font-medium flex w-fit  transform ${hasScrolled ? "transition-all duration-300 translate-y-0  " : "transition-all duration-300 -translate-y-50"}   `}
+      >
         <Image
           src="/logoFolio.svg"
           alt="Logo"
-          width={100}
-          height={100}
+          width={70}
+          height={70}
           // className={`${isHome ? "hidden" : ""}`}
         />
       </Link>
-      <nav className="w-full">
+      <nav className="w-full hidden">
         <ul className="flex justify-end gap-8 text-lg sm:text-xl font-medium">
           <li>
             <Link
@@ -61,6 +96,9 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      <Button variant="main" id="contact-button" className="sm:hidden">
+        On discute ?
+      </Button>
     </header>
   );
 };
