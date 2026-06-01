@@ -15,6 +15,26 @@
       transform: rotate(3deg);
     }
   }
+
+  --animate-typewriter: typing 2s steps(20) infinite, blink 1s infinite;
+  @keyframes typing {
+    '0%': {
+      width: "0%";
+      visibility: "hidden";
+    }
+    '100%': {
+      width: "100%";
+    }
+  }
+  @keyframes blink {
+    0%,
+    100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: "white";
+    }
+  }
 }
 
 @theme inline {
@@ -63,7 +83,8 @@
 :root {
   --radius: 0.625rem;
   --background: oklch(97.193% 0.03188 87.282);
-  --main-color: oklch(40.118% 0.16059 8.68);
+  --main-color: oklch(36.304% 0.12917 26.538);
+  --sec-color: oklch(77.881% 0.19551 138.451);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -138,16 +159,9 @@
   }
   body {
     @apply bg-background text-foreground;
-    cursor:
-      url("/Ellipse_2.png") 10 10,
-      auto;
   }
 }
 
 .color_main {
   color: var(--background) !important;
-}
-
-div[data-slot="carousel-content"] {
-  height: 100%;
 }
