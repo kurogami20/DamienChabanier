@@ -59,7 +59,7 @@ Dans la vie, j’aime beaucoup le dessin et l’animation. J’aime aussi cuisin
             {skills.map((skill) => (
               <li
                 key={skill}
-                className=" text-(--sec-color) px-4 py-2 border border-(--sec-color) rounded-full"
+                className=" text-(--sec-color) px-4 py-2 border border-(--sec-color) rounded-full text-lg"
               >
                 {skill}
               </li>

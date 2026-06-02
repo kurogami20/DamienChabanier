@@ -11,12 +11,14 @@ import Competences from "./expertises/page";
 import { Button } from "@/components/ui/button";
 import Hero from "@/components/hero";
 import Who from "@/components/who";
+import Exp from "@/components/exp";
 
 export default function Home() {
   return (
     <main className=" ">
       <Hero />
       <Who />
+      <Exp />
     </main>
   );
 }

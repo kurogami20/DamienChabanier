@@ -84,7 +84,7 @@
   --radius: 0.625rem;
   --background: oklch(97.193% 0.03188 87.282);
   --main-color: oklch(36.304% 0.12917 26.538);
-  --sec-color: oklch(77.881% 0.19551 138.451);
+  --sec-color: rgb(112, 211, 76);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);

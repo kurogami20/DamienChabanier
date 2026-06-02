@@ -9,14 +9,14 @@ const Header = () => {
           Qui suis-je ?
         </Link>
         <Link href="/about" className="text-xl text-(--sec-color)">
-          Experiences
+          Jusqu'à maintenant
         </Link>
         <button
           className="border-solid border-2 border-(--sec-color) ml-6 rounded-md px-6 py-1 cursor-pointer"
           type="button"
         >
           <Link href="/projects" className="text-xl text-(--sec-color)  ">
-            Contact
+            On discute ?
           </Link>
         </button>
       </nav>
