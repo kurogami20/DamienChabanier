@@ -15,7 +15,7 @@ import Exp from "@/components/exp";
 
 export default function Home() {
   return (
-    <main className=" ">
+    <main className=" overflow-hidden ">
       <Hero />
       <Who />
       <Exp />
