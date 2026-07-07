@@ -3,24 +3,19 @@ import H2 from "./Texts/H2";
 
 const Hero = () => {
   return (
-    <section className="bg-(--main-color) w-screen h-screen flex relative">
-      <section className="flex    w-3/5 relative">
-        {/* <span
-          className="absolute inset-0 flex items-center
-               text-sm font-medium tracking-widest text-black/10
-             
-               select-none pointer-events-none whitespace-pre-wrap"
-        >
-          DRAFT DRAFT DRAFT DRAFT DRAFT ...
-        </span> */}
-
-        <img src="/Line_4.svg" alt="logo" className=" max-w-full" />
+    <section className="bg-(--main-color) w-screen h-dvh md:h-screen  flex relative selection:bg-(--sec-color) selection:text-(--main-color)! align-center overflow-hidden">
+      <section className="  flex  justify-center  w-full  md:w-3/5 relative items-center">
+        <img
+          src="/Line_4.svg"
+          alt="logo"
+          className="hidden md:block max-w-full"
+        />
         <H2
-          classContent="text-(--sec-color) uppercase flex md:items-center md:text-[11rem]! drop-shadow-[10px_5px_0px_rgba(112,211,76,0.2)]"
+          classContent="text-(--sec-color) uppercase flex md:items-center text-center md:text-left text-[4rem] md:text-[5rem]! xl:text-[7rem]! 2xl:text-[9rem]! 3xl:text-[11rem]! drop-shadow-[10px_5px_0px_rgba(112,211,76,0.2)]"
           content="Damien Chabanier"
         />
       </section>
-      <section className="flex  justify-center w-2/5">
+      <section className="lg:flex  justify-center w-2/5 hidden ">
         <img
           src="/logoFolio.svg"
           alt="logo"

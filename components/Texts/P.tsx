@@ -4,7 +4,7 @@ interface Pprops {
 }
 
 const P = ({ classContent, content }: Pprops) => {
-  return <p className={` ${classContent} text-base md:text-lg `}>{content}</p>;
+  return <p className={` ${classContent} text-sm md:text-lg `}>{content}</p>;
 };
 
 export default P;

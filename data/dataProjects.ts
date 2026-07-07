@@ -10,10 +10,10 @@ const projects = [
     stack: [
       {
         name: "frontend",
-        techno: ["html", "php", "css", "javascript", "tailwind", "flowbite"],
+        techno: ["HTML", "PHP", "CSS", "JavaScript", "Tailwind", "Flowbite"],
       },
-      { name: "backend", techno: ["php", "SQL", "mysql"] },
-      { name: "Conception", techno: ["figma"] },
+      { name: "backend", techno: ["PHP", "SQL", "MySQL"] },
+      { name: "Conception", techno: ["Figma"] },
     ],
   },
   {
@@ -25,19 +25,19 @@ const projects = [
     description:
       "Réalisation d'un projet Full Stack en distanciel. Ma mission a consisté à concevoir l'application web de bout en bout (maquettage, schémas UML et Merise) et à développer une API REST. J'ai implémenté l'interface utilisateur dynamique ainsi qu'un backend robuste, tout en intégrant des tests unitaires et d'intégration et en mettant en place un pipeline de déploiement continu.",
     stack: [
-      { name: "frontend", techno: ["react", "typescript", "tailwind"] },
+      { name: "frontend", techno: ["React", "TypeScript", "Tailwind"] },
       {
         name: "backend",
-        techno: ["express", "postgresql", "sequelize", "docker", "api rest"],
+        techno: ["Express", "PostgreSQL", "Sequelize", "Docker", "API REST"],
       },
       {
         name: "Conception & DevOps",
-        techno: ["merise", "uml", "git/github", "surge", "jest/vitest"],
+        techno: ["Merise", "UML", "Git/GitHub", "Surge", "Jest/Vitest"],
       },
     ],
   },
   {
-    titre: "MNE 65 - 2024",
+    titre: "Maison de la Nature et de l'Environnement 65 - 2024",
     rotate: "rotate-5",
     image: "mne65.png",
     link: "https://maisondelanature65.com",
@@ -45,12 +45,12 @@ const projects = [
     description:
       "Mission de refonte et de conception du site web de la Maison de la Nature et de l'Environnement (MNE 65) en utilisant WordPress Core. Le projet s'est articulé autour de l'analyse structurelle de l'existant, de l'optimisation pour le référencement naturel (SEO), de l'intégration de principes d'éco-conception et de l'accessibilité web. J'ai également rédigé un guide utilisateur pour faciliter la prise en main de l'outil.",
     stack: [
-      { name: "frontend / CMS", techno: ["wordpress", "html", "css"] },
+      { name: "frontend / CMS", techno: ["WordPress", "HTML", "CSS"] },
       {
         name: "Optimisation",
-        techno: ["seo", "éco-conception", "accessibilité"],
+        techno: ["SEO", "Éco-conception", "Accessibilité"],
       },
-      { name: "Documentation", techno: ["guide d'utilisation"] },
+      { name: "Documentation", techno: ["Guide d'utilisation"] },
     ],
   },
 ];
