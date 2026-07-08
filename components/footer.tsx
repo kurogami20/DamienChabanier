@@ -45,7 +45,7 @@ const Footer = () => {
       <img
         src="/Line_5.svg"
         alt="logo"
-        className="absolute max-w-full -top-45  md:-top-70 xl:left-90 -rotate-90"
+        className="absolute max-w-full -top-45  md:-top-70 min-[1434]:left-100 left-15 min-[1650px]:left-125 -rotate-90"
       />
     </footer>
   );
