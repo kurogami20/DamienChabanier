@@ -20,7 +20,6 @@ export const metadata: Metadata = {
   title: "Damien Chabanier Portfolio",
   description:
     "Damien Chabanier, développeur web passionné, crée des expériences numériques uniques. Découvrez mes projets innovants et ma vision créative pour le futur du web.",
-  icons: "favicon.svg",
 };
 
 export default function RootLayout({
@@ -31,6 +30,9 @@ export default function RootLayout({
   return (
     <>
       <html lang="en">
+        <head>
+          <link rel="icon" href="/logoFolio.svg" sizes="any" />
+        </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased bg-my-background selection:bg-(--main-color) selection:text-(--sec-color) `}
         >

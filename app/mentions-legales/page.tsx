@@ -17,7 +17,7 @@ const Page = () => {
           <br />
           Email :{" "}
           <a
-            className="text-(--main-color) hover:underline"
+            className="text-blue-500 hover:underline"
             href="mailto:damienchabanier@gmail.com"
           >
             damienchabanier@gmail.com
@@ -61,7 +61,7 @@ const Page = () => {
           demandes adressées au site. Le site ne dépose pas de cookies ni de
           traceurs. Pour plus d’informations, consultez{" "}
           <a
-            className="text-(--main-color) hover:underline"
+            className="text-blue-500 hover:underline"
             href="/politique-de-confidentialite"
           >
             la politique de confidentialité
