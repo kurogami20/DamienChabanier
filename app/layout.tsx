@@ -35,12 +35,7 @@ export default function RootLayout({
           className={`${geistSans.variable} ${geistMono.variable} antialiased bg-my-background selection:bg-(--main-color) selection:text-(--sec-color) `}
         >
           <Provider>
-            <ThemeProvider
-              attribute="class"
-              defaultTheme="light"
-              enableSystem
-              disableTransitionOnChange
-            >
+            <ThemeProvider enableSystem disableTransitionOnChange>
               <Header />
               {children}
               <Footer />

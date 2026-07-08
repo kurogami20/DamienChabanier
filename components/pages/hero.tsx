@@ -25,14 +25,26 @@ const Hero = () => {
       </section>
       <div className="absolute right-0 bottom-0  flex gap-4 p-4 mr-5 mb-5">
         {" "}
-        <FontAwesomeIcon
-          className="text-(--sec-color) w-10! h-10! xl:size-15! cursor-pointer"
-          icon={faGithub}
-        />
-        <FontAwesomeIcon
-          className="text-(--sec-color) w-10! h-10! xl:size-15! cursor-pointer"
-          icon={faSquareLinkedin}
-        />
+        <a
+          href="https://github.com/kurogami20"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            className="text-(--sec-color) w-10! h-10! xl:size-15! cursor-pointer"
+            icon={faGithub}
+          />
+        </a>
+        <a
+          href="www.linkedin.com/in/damien-chabanier-822190244"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon
+            className="text-(--sec-color) w-10! h-10! xl:size-15! cursor-pointer"
+            icon={faSquareLinkedin}
+          />
+        </a>
       </div>
     </section>
   );

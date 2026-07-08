@@ -26,18 +26,12 @@ interface TextExpProps {
 
   content: {
     name: string;
-    techno: { name: string }[];
+    techno: string[];
   }[];
   url: string;
 }
 
-const TextExp = ({
-  title,
-  description,
-
-  content,
-  url,
-}: TextExpProps) => {
+const TextExp = ({ title, description, content, url }: TextExpProps) => {
   const isTabAtom = useAtomValue(TabAtom);
   const setIsTab = useSetAtom(TabAtom);
   const updateIsTab = () => {
@@ -47,6 +41,7 @@ const TextExp = ({
       setIsTab(true);
     }
   };
+
   useEffect(() => {
     updateIsTab();
   }, []);

@@ -18,7 +18,10 @@ const Who = () => {
   ];
 
   return (
-    <section className="bg-background w-full h-dvh md:h-screen flex flex-col xl:justify-center xl:pt-10  2xl:pt-15 ">
+    <section
+      id="who"
+      className="bg-background w-full h-dvh md:h-screen flex flex-col xl:justify-center xl:pt-10  2xl:pt-15 "
+    >
       <section className="flex h-2.5/7 md:h-4/7  xl:h-3/7   justify-between xl:gap-8 w-full align-middle items-center p-6 md:px-15 2xl:px-25 relative ">
         <article className="flex flex-col gap-4 xl:w-3/4 py-2 justify-center ">
           <H2 classContent="text-(--main-color)  capitalize" content="Hey !" />

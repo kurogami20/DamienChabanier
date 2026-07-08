@@ -119,14 +119,26 @@ const Contact = () => {
             Vous pouvez me retrouver sur
           </p>
           <div className="flex gap-6  xl:flex-row  ">
-            <FontAwesomeIcon
-              className="text-(--sec-color) w-10! h-10! xl:size-12! cursor-pointer"
-              icon={faGithub}
-            />
-            <FontAwesomeIcon
-              className="text-(--sec-color) w-10! h-10! xl:size-12! cursor-pointer"
-              icon={faSquareLinkedin}
-            />
+            <a
+              href="https://github.com/kurogami20"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                className="text-(--sec-color) w-10! h-10! xl:size-12! cursor-pointer"
+                icon={faGithub}
+              />
+            </a>
+            <a
+              href="www.linkedin.com/in/damien-chabanier-822190244"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                className="text-(--sec-color) w-10! h-10! xl:size-12! cursor-pointer"
+                icon={faSquareLinkedin}
+              />
+            </a>
           </div>
         </section>
       </section>

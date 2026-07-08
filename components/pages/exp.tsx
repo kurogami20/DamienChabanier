@@ -22,7 +22,10 @@ const Exp = () => {
   };
 
   return (
-    <section className=" w-full h-fit p-6 md:px-15 md:py-15 2xl:px-25  bg-background  flex flex-col justify-between  relative">
+    <section
+      id="projects"
+      className=" w-full h-fit p-6 md:px-15 md:py-15 2xl:px-25  bg-background  flex flex-col justify-between  relative"
+    >
       <H2
         classContent="text-(--main-color) text-center  xl:text-left capitalise md:mb-20 xl:mb-15 2xl:mb-25 w-full text-wrap"
         content="Mes Projets"
@@ -56,6 +59,7 @@ const Exp = () => {
             (project, index) =>
               index === projectNo && (
                 <TextExp
+                  // @ts-ignore will redo later
                   className={` ${isFading ? "opacity-0" : "opacity-100"} transition-opacity duration-200 ease-in-out `}
                   key={project.titre}
                   title={project.titre}
