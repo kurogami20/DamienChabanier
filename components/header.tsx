@@ -9,28 +9,38 @@ const Header = () => {
     >
       <nav className="flex  gap-6 items-center w-full justify-center lg:justify-end">
         <span className="flex  gap-6 items-center max-w-full  font-semibold ">
-          <a
-            href="/#who"
+          <button
+            type="button"
             className="  text-normal md:text-lg! xl:text-xl text-(--sec-color)  hover:cursor-pointer hover:underline"
+            onClick={() => {
+              document
+                .getElementById("who")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Hey !
-          </a>
-          <a
-            href="/#projects"
+          </button>
+          <button
+            type="button"
             className=" text-normal md:text-lg! xl:text-xl text-(--sec-color) hover:cursor-pointer hover:underline"
+            onClick={() => {
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             Projets
-          </a>
+          </button>
           <button
-            className="border-solid border-2 border-(--sec-color) ml-6 rounded-md px-6 py-1 cursor-pointer hover:underline"
+            className="border-solid border-2 border-(--sec-color) ml-6 rounded-md px-6 py-1 cursor-pointer hover:underline text-normal md:text-lg! xl:text-xl text-(--sec-color)"
             type="button"
+            onClick={() => {
+              document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
-            <a
-              href="/#contact"
-              className=" text-normal md:text-lg! xl:text-xl text-(--sec-color)  "
-            >
-              On discute ?
-            </a>
+            On discute ?
           </button>
         </span>
       </nav>
