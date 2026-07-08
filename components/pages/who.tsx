@@ -28,7 +28,7 @@ const Who = () => {
           <P
             classContent=" border-b-5 border-(--main-color)  pb-5 "
             content="Je m’appelle Damien. Je suis développeur web full-stack. J’adore concevoir et créer des applications. Je code principalement en JavaScript et en TypeScript, mais je peux aussi utiliser d’autres langages de programmation. J’apprécie particulièrement les défis et l’aspect résolution de problèmes dans un projet de développement.
-Dans la vie, j’aime beaucoup le dessin et l’animation. J’aime aussi cuisiner et les jeux vidéo."
+Dans la vie, j’aime beaucoup le dessin et l’animation."
           />
         </article>
         <img
