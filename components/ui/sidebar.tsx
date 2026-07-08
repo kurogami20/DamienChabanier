@@ -260,7 +260,7 @@ function SidebarTrigger({
   ...props
 }: React.ComponentProps<typeof Button>) {
   const { toggleSidebar } = useSidebar();
-  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <Button
       data-sidebar="trigger"
@@ -270,13 +270,13 @@ function SidebarTrigger({
       className={cn("size-7", className)}
       onClick={(event) => {
         onClick?.(event);
-        setIsOpen(!isOpen);
+
         toggleSidebar();
       }}
       {...props}
     >
       {/* <PanelLeftIcon /> */}
-      {isOpen ? <PanelLeftOpen /> : <PanelLeftClose />}
+      <PanelLeftOpen />
 
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
@@ -489,7 +489,7 @@ const sidebarMenuButtonVariants = cva(
       size: {
         default: "h-8 text-sm",
         sm: "h-7 text-xs",
-        lg: "h-12 text-sm group-data-[collapsible=icon]:p-0!",
+        xl: "h-12 text-sm group-data-[collapsible=icon]:p-0!",
       },
     },
     defaultVariants: {

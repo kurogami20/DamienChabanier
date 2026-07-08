@@ -4,6 +4,39 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --animate-wiggle: wiggle 0.3s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+
+  --animate-typewriter: typing 2s steps(20) infinite, blink 1s infinite;
+  @keyframes typing {
+    '0%': {
+      width: "0%";
+      visibility: "hidden";
+    }
+    '100%': {
+      width: "100%";
+    }
+  }
+  @keyframes blink {
+    0%,
+    100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: "white";
+    }
+  }
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -40,7 +73,7 @@
   --color-card: var(--card);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
+  --radius-xl: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
@@ -50,6 +83,8 @@
 :root {
   --radius: 0.625rem;
   --background: oklch(97.193% 0.03188 87.282);
+  --main-color: oklch(36.304% 0.12917 26.538);
+  --sec-color: rgb(112, 211, 76);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -129,8 +164,4 @@
 
 .color_main {
   color: var(--background) !important;
-}
-
-body {
-  cursor: url("favicon.ico"), auto;
 }
