@@ -51,6 +51,9 @@ Dans la vie, j’aime beaucoup le dessin et l’animation."
           <Button
             variant="main"
             className="text-(--sec-color) text-base md:text-lg "
+            onClick={() => {
+              window.open("/cv_damien_chabanier.pdf", "_blank");
+            }}
           >
             <DownloadIcon className="" /> CV
           </Button>
