@@ -1,17 +1,11 @@
 "use client";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useSetAtom } from "jotai";
-import { HomeAtom, TabAtom } from "@/store/atoms";
-import Projects from "./projets/page";
-import Competences from "./expertises/page";
-import { Button } from "@/components/ui/button";
-import Hero from "@/components/hero";
-import Who from "@/components/who";
-import Exp from "@/components/exp";
+import { TabAtom } from "@/store/atoms";
+import Hero from "@/components/pages/hero";
+import Who from "@/components/pages/who";
+import Exp from "@/components/pages/exp";
 import Contact from "@/components/pages/contact";
 
 export default function Home() {

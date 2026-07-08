@@ -34,10 +34,10 @@ const Header = () => {
           </h1>
         </a>
         <span className="flex gap-6 items-center max-w-full  font-semibold">
-          <a href="/" className=" text-lg! lg:text-xl text-(--sec-color) ">
+          <a href="/" className=" text-lg! xl:text-xl text-(--sec-color) ">
             Qui suis-je ?
           </a>
-          <a href="/about" className="text-lg! lg:text-xl text-(--sec-color)">
+          <a href="/about" className="text-lg! xl:text-xl text-(--sec-color)">
             Jusqu'à maintenant
           </a>
           <button
@@ -46,7 +46,7 @@ const Header = () => {
           >
             <a
               href="/projects"
-              className="text-lg! lg:text-xl text-(--sec-color)  "
+              className="text-lg! xl:text-xl text-(--sec-color)  "
             >
               On discute ?
             </a>
