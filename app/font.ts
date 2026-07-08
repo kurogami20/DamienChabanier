@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 export const myTitleFont = localFont({
   src: [
     {
-      path: "../public/fonts/SkiwarRegular-woOan.otf",
+      path: "/fonts/SkiwarRegular-woOan.otf",
       //   weight: "700",
       //   style: "normal",
     },
