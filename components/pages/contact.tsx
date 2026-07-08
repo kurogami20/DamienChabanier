@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-background w-full h-full  flex flex-col xl:justify-center xl:mt-15  xl:px-125  overflow-hidden "
+      className="bg-background w-full h-full  flex flex-col xl:justify-center xl:mt-15 xl:px-70  2xl:px-100 min-[1650px]:px-125  overflow-hidden "
     >
       <section className="flex flex-col w-full h-full p-6  bg-(--main-color) items-center gap-5">
         <H2

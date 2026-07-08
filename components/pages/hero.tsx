@@ -12,7 +12,7 @@ const Hero = () => {
           className="hidden xl:block max-w-full"
         />
         <H2
-          classContent="text-(--sec-color) uppercase flex md:items-center text-center xl:text-left text-[4rem] md:text-[5rem]! xl:text-[7rem]! 2xl:text-[9rem]! 3xl:text-[11rem]! drop-shadow-[10px_5px_0px_rgba(112,211,76,0.2)]"
+          classContent="text-(--sec-color) uppercase flex md:items-center text-center xl:text-left text-[4rem] md:text-[5rem]! xl:text-[6rem]! 2xl:text-[9rem]! 3xl:text-[11rem]! drop-shadow-[10px_5px_0px_rgba(112,211,76,0.2)]"
           content="Damien Chabanier"
         />
       </section>
@@ -20,17 +20,17 @@ const Hero = () => {
         <img
           src="/logoFolio.svg"
           alt="logo"
-          className="flex md:items-center max-w-full md:w-5/7"
+          className="flex md:items-center max-w-full md:w-5/7 2xl:w-4/7"
         />
       </section>
       <div className="absolute right-0 bottom-0  flex gap-4 p-4 mr-5 mb-5">
         {" "}
         <FontAwesomeIcon
-          className="text-(--sec-color) w-10! h-10! xl:size-17! cursor-pointer"
+          className="text-(--sec-color) w-10! h-10! xl:size-15! cursor-pointer"
           icon={faGithub}
         />
         <FontAwesomeIcon
-          className="text-(--sec-color) w-10! h-10! xl:size-17! cursor-pointer"
+          className="text-(--sec-color) w-10! h-10! xl:size-15! cursor-pointer"
           icon={faSquareLinkedin}
         />
       </div>

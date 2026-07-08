@@ -22,9 +22,9 @@ const Exp = () => {
   };
 
   return (
-    <section className=" w-full h-fit p-6 md:px-15 md:py-15 xl:px-40 bg-background  flex flex-col justify-between  relative">
+    <section className=" w-full h-fit p-6 md:px-15 md:py-15 2xl:px-25  bg-background  flex flex-col justify-between  relative">
       <H2
-        classContent="text-(--main-color) text-center  xl:text-left capitalise md:mb-25 w-full text-wrap"
+        classContent="text-(--main-color) text-center  xl:text-left capitalise md:mb-20 xl:mb-15 2xl:mb-25 w-full text-wrap"
         content="Mes Projets"
       />
       <div className="h-full hidden md:absolute bg-(--main-color) z-0 w-[12%] top-0 left-0" />
@@ -66,7 +66,7 @@ const Exp = () => {
               ),
           )}{" "}
         </article>
-        <div className="w-fit flex flex-col gap-4 items-center xl:absolute top-full   xl:right-15  xl:top-1/2 xl:-translate-y-1/2  xl:z-10  -rotate-90 xl:rotate-0">
+        <div className="w-fit flex flex-col gap-4 items-center xl:absolute top-full xl:right-6  2xl:right-15  xl:top-1/2 xl:-translate-y-1/2  xl:z-10  -rotate-90 xl:rotate-0">
           <ChevronUp
             className=" text-(--main-color) cursor-pointer hover:border-2 hover:border-(--main-color) rounded-full w-8 h-8"
             size={50}

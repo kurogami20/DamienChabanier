@@ -10,7 +10,7 @@ interface ScreenExpProps {
 const ScreenExp = ({ rotate, url, image }: ScreenExpProps) => {
   return (
     <Card
-      className={`border-5 p-0 gap-0 m-0 border-(--main-color) w-70 h-100   md:w-140 md:h-150 xl:w-250 xl:h-150 rounded-[33px] drop-shadow-[20px_20px_0px_rgba(115,20,20,0.47)]  xl:drop-shadow-[40px_40px_0px_rgba(115,20,20,0.47)] ${rotate} group relative `}
+      className={`border-5 p-0 gap-0 m-0 border-(--main-color) w-70 h-100   md:w-140 md:h-150 xl:w-170 2xl:w-200 min-[1650px]:w-250!  rounded-[33px] drop-shadow-[20px_20px_0px_rgba(115,20,20,0.47)]  xl:drop-shadow-[40px_40px_0px_rgba(115,20,20,0.47)] ${rotate} group relative `}
       onScroll={() => console.log("scroll")}
     >
       <a href={url} target="_blank" rel="noopener noreferrer">

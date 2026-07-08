@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import a from "next/a";
+
 import { myTitleFont } from "@/app/font";
 
 const Header = () => {
@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full h-16 flex items-center  px-20 py-2 fixed top-0 z-50 transition-colors duration-300  ${
+      className={`w-full h-16 flex items-center  px-20 py-2 fixed top-0 z-50 transition-colors duration-300 hidden  ${
         isScrolled ? "bg-(--main-color)" : "bg-transparent"
       } selection:bg-(--sec-color) selection:text-(--main-color)!  `}
     >
