@@ -32,7 +32,7 @@ export default function RootLayout({
       <html lang="en">
         <head>
           <link rel="icon" href="/logoFolio.svg" sizes="any" />
-          <meta property="og:title" content="Titre de la page" />
+          <meta property="og:title" content="Damien Chabanier" />
           <meta
             property="og:description"
             content="Damien Chabanier, développeur web passionné, crée des expériences numériques uniques. Découvrez mes projets innovants et ma vision créative pour le futur du web."
