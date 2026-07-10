@@ -27,12 +27,7 @@ export const metadata: Metadata = {
       "Damien Chabanier, développeur web passionné, crée des expériences numériques uniques. Découvrez mes projets innovants et ma vision créative pour le futur du web.",
     url: "https://damienchabanier.vercel.app",
     siteName: "Damien Chabanier",
-    images: [
-      {
-        url: "/ogImage.png",
-        width: 800,
-        height: 600,
-      },
+    images: "/ogImage.png"
     ],
     locale: "fr_FR",
     type: "website",
