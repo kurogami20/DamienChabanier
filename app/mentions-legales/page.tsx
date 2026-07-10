@@ -49,9 +49,8 @@ const Page = () => {
 
         <h3>Polices de caractères</h3>
         <p>
-          Le site utilise la police Sywar pour certains titres. Cette police est
-          utilisée conformément à sa licence d’utilisation ; les mentions
-          requises par la licence doivent être respectées le cas échéant.
+          Le site utilise la police Sharkbit de Nami Studio pour certains titres. Cette police est
+          utilisée conformément à sa licence d’utilisation.
         </p>
 
         <h3>Données personnelles</h3>
