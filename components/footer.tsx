@@ -39,7 +39,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="www.linkedin.com/in/damien-chabanier-822190244"
+            href="https://www.linkedin.com/in/damien-chabanier-822190244"
             target="_blank"
             rel="noopener noreferrer"
           >

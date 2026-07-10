@@ -18,9 +18,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Damien Chabanier Portfolio",
+  title: "Damien Chabanier",
   description:
     "Damien Chabanier, développeur web passionné, crée des expériences numériques uniques. Découvrez mes projets innovants et ma vision créative pour le futur du web.",
+  openGraph: {
+    title: "Damien Chabanier",
+    description:
+      "Damien Chabanier, développeur web passionné, crée des expériences numériques uniques. Découvrez mes projets innovants et ma vision créative pour le futur du web.",
+    url: "https://damienchabanier.vercel.app",
+    siteName: "Damien Chabanier",
+    images: [
+      {
+        url: "/ogImage.png",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -33,18 +49,6 @@ export default function RootLayout({
       <html lang="en">
         <head>
           <link rel="icon" href="/logoFolio.svg" sizes="any" />
-          <meta property="og:title" content="Damien Chabanier" />
-          <meta
-            property="og:description"
-            content="Damien Chabanier, développeur web passionné, crée des expériences numériques uniques. Découvrez mes projets innovants et ma vision créative pour le futur du web."
-          />
-          <meta property="og:image" content="/ogImage.png" />
-          <meta
-            property="og:url"
-            content="https://damienchabanier.vercel.app"
-          />
-          <meta property="og:type" content="portfolio" />
-          <meta property="og:site_name" content="Damien Chabanier" />
         </head>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased bg-my-background selection:bg-(--main-color) selection:text-(--sec-color) `}

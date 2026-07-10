@@ -8,7 +8,7 @@ interface H2Props {
 const H2 = ({ classContent, content }: H2Props) => {
   return (
     <h2
-      className={` ${classContent}   text-5xl md:text-6xl 2xl:text-7xl ${myTitleFont.className}`}
+      className={` ${classContent}   text-5xl md:text-7xl 2xl:text-8xl ${myTitleFont.className}`}
     >
       {content}
     </h2>

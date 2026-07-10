@@ -57,7 +57,7 @@ const TextExp = ({ title, description, content, url }: TextExpProps) => {
             <AccordionTrigger className="hover:cursor-pointer ">
               <CardTitle className=" mb-2 md:mb-4">
                 <h1
-                  className={`text-3xl md:text-4xl ${myTitleFont.className} text-(--main-color)! font-normal`}
+                  className={`text-3xl md:text-4xl lg:text-5xl! xl:text-6xl! ${myTitleFont.className} text-(--main-color)! font-normal`}
                 >
                   {title}
                 </h1>
